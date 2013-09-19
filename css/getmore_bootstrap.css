@@ -35,7 +35,7 @@ body {
 #logo {
 	width: 272px;
 	height: 124px;
-	margin-bottom: 48px ;
+	margin-bottom: 30px ;
 	margin-right: Auto;
 	margin-top: Auto;
 	margin-left: Auto;
@@ -45,7 +45,7 @@ body {
 	background: url('../img/IconStar.png') no-repeat center left;
 	padding-left: 15px;
 	margin-left: 25px;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .tags > li:active {
