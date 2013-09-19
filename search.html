@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Getmore</title>
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/getmore_bootstrap.css"/>
+  <link rel="stylesheet" href="css/search.css"/>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.0.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script></script>
+</head>
+ 
+<body>
+  <div class='container'>
+    <div class='header'>
+      <nav class="navbar navbar-inverse" role="navigation">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+						<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>購物車</li>
+                <hr />
+								<li class='item_in_cart'>
+									<img class='col-md-2' src="img/clothes-01.png"/>
+									<p class='col-md-4'>product</p>
+									<div id='size' class="col-md-1">M</div>
+									<div id="price" class="col-md-3">2400元</div>
+									<div class="col-md-1">&times;</div>
+									<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+								</li>
+								<hr >
+								<li id="cart_summary">
+									<div class='col-md-8'>
+										<p>商品件數 共項 </p>
+										<p>消費金額 $ </p>
+									</div>
+									<button id='purchase' class="col-md-1 btn btn-danger" href="apply.html">確認結帳</button>
+								</li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+      <div id='header' class='row'>
+        <div id='logo' class='col-md-12'>
+          <a href='home.html'><img src='img/getmore.png' /></a>
+        </div>
+        <div class='col-md-7'>
+					<ul class='nav navbar-nav tags'>
+						<li>NEW</li>
+						<li>WOMEN</li>
+						<li>MEN</li>
+						<li>KIDS/BABY</li>
+					</ul>
+        </div>
+        <div id='header_right_section' class='col-md-5'>
+					<ul class='nav navbar-nav tags'>
+						<li>新手上路</li>
+						<li>賣衣服</li>
+						<li>About</li>
+					</ul>
+        </div>
+      </div>
+    </div><!-- header -->
+    <div class='main'>
+      <div class='row'>
+        <div class='col-md-3'>
+          <form id='search_brand' role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="搜尋品牌">
+            </div>
+						<button type="submit" class="btn btn-default"></button>
+          </form>
+					<div id="pattern">
+						<h6>款式</h6>
+						<hr />
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									T-shirt
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									襯衫
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									背心
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									娃娃裝
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									Polo衫
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									雪紡
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									針織/毛衣
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									長上衣
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									其他
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									無袖
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									短袖
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									長袖
+								</label>
+							</div>
+						</div>
+					</div><!-- pattern -->
+					<div id="color">
+						<h6>顏色</h6>
+						<hr />
+						<div class="col-md-4">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/black.png" alt="black" />
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/red.png" alt="red" />
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/blue.png" alt="blue.png" />
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/pink.png" alt="pink" />
+								</label>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img id='white' src="img/colors/white.png" alt="white" />
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/green.png" alt="green" />
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/orange.png" alt="orange" />
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/yellow.png" alt="yellow" />
+								</label>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/gray.png" alt="gray" />
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/brown.png" alt="brown" />
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/purple.png" alt="purple" />
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									<img src="img/colors/color.png" alt="color" />
+								</label>
+							</div>
+						</div>
+					</div><!-- color -->
+					<div id="style">
+						<h6>風格</h6>
+						<hr />
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								條紋
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								幾何
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								格子
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								小碎花
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								牛仔
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								古著
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								夢幻
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								上班族
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								正式場合
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								運動風
+							</label>
+						</div>
+					</div><!-- style -->
+					<div id="seacon">
+						<h6>季節</h6>
+						<hr />
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								春夏
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								秋冬
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="">
+								無季節
+							</label>
+						</div>
+					</div><!-- season -->
+				</div>
+
+        <div class='col-md-9'>
+          <div class='row'>
+            <div class='col-md-12'>
+              <ul class="pull-right pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-4'>
+              <a href='scholarship.html'>
+                <img src='img/logo.jpg' />
+                <p>product</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='footer'>
+      <hr />
+  </div>
+</body>
+</html>

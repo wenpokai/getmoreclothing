@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Getmore</title>
+ 
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/getmore_bootstrap.css"/>
+  <link rel="stylesheet" href="css/apply.css"/>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.0.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+</head>
+ 
+<body>
+  <div class='container'>
+    <div class='header'>
+      <nav class="navbar navbar-inverse" role="navigation">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>購物車</li>
+                <hr />
+								<li class='item_in_cart'>
+									<img class='col-md-2' src="img/clothes-01.png"/>
+									<p class='col-md-4'>product</p>
+									<div id='size' class="col-md-1">M</div>
+									<div id="price" class="col-md-3">2400元</div>
+									<div class="col-md-1">&times;</div>
+									<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+								</li>
+								<hr >
+								<li id="cart_summary">
+									<div class='col-md-8'>
+										<p>商品件數 共項 </p>
+										<p>消費金額 $ </p>
+									</div>
+									<button id='purchase' class="col-md-1 btn btn-danger" href="apply.html">確認結帳</button>
+								</li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+      <div id='header' class='row'>
+        <div id='logo' class='col-md-12'>
+          <a href='home.html'><img src='img/getmore.png' /></a>
+        </div>
+        <div class='col-md-7'>
+					<ul class='nav navbar-nav tags'>
+						<li>NEW</li>
+						<li>WOMEN</li>
+						<li>MEN</li>
+						<li>KIDS/BABY</li>
+					</ul>
+        </div>
+        <div id='header_right_section' class='col-md-5'>
+					<ul class='nav navbar-nav tags'>
+						<li>新手上路</li>
+						<li>賣衣服</li>
+						<li>About</li>
+					</ul>
+        </div>
+      </div>
+    </div><!-- header -->
+		<hr />
+    <div class='main'>
+      <div class='row'>
+        <div class='col-md-3'>
+          <h3>會員中心</h3>
+          <hr />
+					<h5>會員資料</h5>
+					<h5>訂單管理</h5>
+					<h5>訊息中心</h5>
+					<h5>收藏管理</h5>
+					<h5>我的帳戶</h5>
+					<h5 id='clothes_management'>二手衣販售管理</h5>
+        </div>
+        <div class='col-md-9'>
+					<h3><span id="selling">開始賣衣服</span>/<span id="pending_list">待付款貨單狀態</span>/<span id="status">二手衣販售狀態</span></h3>
+					<hr />
+					<img src="img/buy/Buy2.png" alt="" />
+					<h3>請輸入取件資訊</h3>
+					<hr />
+          <form role="form">
+            <div class="form-group col-md-7">
+              <label for="name">姓名</label>
+              <input type="text" class="form-control" id="name">
+						<p class='description'>ex:王小咩</p>
+						</div>
+						<div class="form-group col-md-7">
+							<label for="address">取件地址</label><br>
+							<select name="" id="">
+								<option>縣市</option>
+							</select>
+							<select name="" id="">
+								<option>鄉鎮市區</option>
+							</select>
+							<input id='address_code' type="text" value="" />
+							<input type="text" id="address" value="" />
+						</div>
+						<div class="form-group col-md-7">
+							<label for="phone">聯絡電話</label>
+							<input type="text" class="form-control" id="phone" value="" />
+							<p class='description'>請留下您的手機號碼,宅配人員將會與您聯繫。</p>
+						</div>
+					</form>
+					<div id="returning_info" class='col-md-11'>
+						<h3>期滿送回資訊</h3>
+						<hr />
+						<p class='description' id='returning_description'>您可以選擇不同於取件的地址,抑或將您的衣服捐給慈善機構 GetMore將於衣服期滿後協助為您處理。</p><br>
+						<div class="radio" class='col-md-6'>
+							<label>
+								<input type="radio" name="style" value="option1" >
+								期滿後，未售出之商品全數捐給慈善機構，不用還我！
+							</label>
+						</div>
+						<div class="radio" class='col-md-6'>
+							<label>
+								<input type="radio" name="style" value="option1" >
+								請寄還給我，同取件資訊。
+							</label>
+						</div>
+					</div>
+          <form role="form">
+            <div class="form-group col-md-7">
+              <label for="name">姓名</label>
+              <input type="text" class="form-control" id="name">
+							<p class='description'>ex:王小咩</p>
+						</div>
+						<div class="form-group col-md-7">
+							<label for="address">取件地址</label><br>
+							<select name="" id="">
+								<option>縣市</option>
+							</select>
+							<select name="" id="">
+								<option>鄉鎮市區</option>
+							</select>
+							<input id='address_code' type="text" value="" />
+							<input type="text" id="address" value="" />
+						</div>
+						<div class="form-group col-md-7">
+							<label for="phone">聯絡電話</label>
+							<input type="text" class="form-control" id="phone" value="" />
+							<p class='description'>請留下您的手機號碼,宅配人員將會與您聯繫。</p>
+						</div>
+						<div class="form-group col-md-7">
+							<label for="time">配送時間</label>
+							<select name="time" id="">
+								<option>任意</option>
+							</select>
+						</div>
+						<div class="form-group col-md-7">
+							<label for="">發票種類</label><br>
+							<label>
+								<input type="radio" name="receipt" value="option1" >
+								捐贈（捐贈單位：創世基金會）
+							</label>
+							<label>
+								<input type="radio" name="receipt" value="option1" >
+								三聯發票<input type="text" name="" id="" value="" placeholder='統一編號' />
+							</label>
+						</div>
+					</form>
+					<div class="col-md-7">
+						<button type="submit" class='btn btn-default'>上一步</button>
+						<button type="submit" class="btn btn-info">下一步</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

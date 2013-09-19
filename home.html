@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Getmore</title>
+ 
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/getmore_bootstrap.css"/>
+  <link rel="stylesheet" href="css/home.css"/>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.0.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script></script>
+</head>
+ 
+<body>
+  <div class='container'>
+    <div class='header'>
+      <nav class="navbar navbar-inverse" role="navigation">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>購物車</li>
+                <hr />
+								<li class='item_in_cart'>
+									<img class='col-md-2' src="img/clothes-01.png"/>
+									<p class='col-md-4'>product</p>
+									<div id='size' class="col-md-1">M</div>
+									<div id="price" class="col-md-3">2400元</div>
+									<div class="col-md-1">&times;</div>
+									<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+								</li>
+								<hr >
+								<li id="cart_summary">
+									<div class='col-md-8'>
+										<p>商品件數 共項 </p>
+										<p>消費金額 $ </p>
+									</div>
+									<button id='purchase' class="col-md-1 btn btn-danger" href="apply.html">確認結帳</button>
+								</li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+      <div id='header' class='row'>
+        <div id='logo' class='col-md-12'>
+          <a href='home.html'><img src='img/getmore.png' /></a>
+        </div>
+        <div class='col-md-7'>
+					<ul class='nav navbar-nav tags'>
+						<li>NEW</li>
+						<li>WOMEN</li>
+						<li>MEN</li>
+						<li>KIDS/BABY</li>
+					</ul>
+        </div>
+        <div id='header_right_section' class='col-md-5'>
+					<ul class='nav navbar-nav tags'>
+						<li>新手上路</li>
+						<li>賣衣服</li>
+						<li>About</li>
+					</ul>
+        </div>
+      </div>
+    </div><!-- header -->
+    <div class='main'>
+			<div id="main-carousel" class="carousel slide">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/banner/banner-02.png">
+					</div>
+					<div class="item">
+						<img src="img/banner/banner-03.png">
+					</div>
+					<div class="item">
+						<img src="img/banner/banner-05.png">
+					</div>
+					<div class="item">
+						<img src="img/banner/banner-06.png">
+					</div>
+					<div class="item">
+						<img src="img/banner/banner-07.png">
+					</div>
+					<div class="item">
+						<img src="img/banner/banner-09.png">
+					</div>
+					<div class="item">
+						<img src="img/banner/banner-10.png">
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#main-carousel" data-slide="prev">
+					<span class="icon-prev"></span>
+				</a>
+				<a class="right carousel-control" href="#main-carousel" data-slide="next">
+					<span class="icon-next"></span>
+				</a>
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#main-carousel" data-slide-to="1"></li>
+					<li data-target="#main-carousel" data-slide-to="2"></li>
+					<li data-target="#main-carousel" data-slide-to="3"></li>
+					<li data-target="#main-carousel" data-slide-to="4"></li>
+					<li data-target="#main-carousel" data-slide-to="5"></li>
+					<li data-target="#main-carousel" data-slide-to="6"></li>
+					<li data-target="#main-carousel" data-slide-to="7"></li>
+				</ol>
+			</div>
+		</div>
+		<div id="getmore_suggestions">
+			<h5>GetMore 推薦</h5>
+			<hr />
+			<div class="container">
+				<div class="row">
+					<div id="suggestions-carousel" class="carousel slide">
+						<div class="carousel-inner">
+							<div class="item active">
+								<ul class='img-thumbnail suggestion_list'>
+									<li class='col-md-4'>
+										<div class='img-thumbnail'>
+											<img src="img/clothes-02.png">
+										</div>
+									</li>
+									<li class='col-md-4'>
+										<div class='img-thumbnail'>
+											<img src="img/clothes-02.png">
+										</div>
+									</li>
+									<li class='col-md-4'>
+										<div class='img-thumbnail'>
+											<img src="img/clothes-02.png">
+										</div>
+									</li>
+									<li class='col-md-4'>
+										<div class='img-thumbnail'>
+											<img src="img/clothes-02.png">
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="item">
+								<img src="img/banner/banner-03.png">
+							</div>
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#main-carousel" data-slide="prev">
+							<span class="icon-prev"></span>
+						</a>
+						<a class="right carousel-control" href="#main-carousel" data-slide="next">
+							<span class="icon-next"></span>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div id='new_products'>
+			<h5>GetMore 推薦</h5>
+			<hr />
+			<div class="production">
+				<img class='collection' src="img/collect.png" alt="collect" />
+			</div>
+			
+		</div>
+	</div>
+    <div class='footer'>
+      <hr />
+  </div>
+</body>
+</html>

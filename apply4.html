@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Getmore</title>
+
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/getmore_bootstrap.css"/>
+		<link rel="stylesheet" href="css/apply.css"/>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-2.0.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<div class='container'>
+			<div class='header'>
+				<nav class="navbar navbar-inverse" role="navigation">
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Search</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>購物車</li>
+							<hr />
+							<li class='item_in_cart'>
+							<img class='col-md-2' src="img/clothes-01.png"/>
+							<p class='col-md-4'>product</p>
+							<div id='size' class="col-md-1">M</div>
+							<div id="price" class="col-md-3">2400元</div>
+							<div class="col-md-1">&times;</div>
+							<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+							</li>
+							<hr >
+							<li id="cart_summary">
+							<div class='col-md-8'>
+								<p>商品件數 共項 </p>
+								<p>消費金額 $ </p>
+							</div>
+							<button id='purchase' class="col-md-1 btn btn-danger" href="apply.html">確認結帳</button>
+							</li>
+						</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+				</nav>
+				<div id='header' class='row'>
+					<div id='logo' class='col-md-12'>
+						<a href='home.html'><img src='img/getmore.png' /></a>
+					</div>
+					<div class='col-md-7'>
+						<ul class='nav navbar-nav tags'>
+							<li>NEW</li>
+							<li>WOMEN</li>
+							<li>MEN</li>
+							<li>KIDS/BABY</li>
+						</ul>
+					</div>
+					<div id='header_right_section' class='col-md-5'>
+						<ul class='nav navbar-nav tags'>
+							<li>新手上路</li>
+							<li>賣衣服</li>
+							<li>About</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- header -->
+			<hr />
+			<div class='main'>
+				<div class='row'>
+					<div id='sidebar' class='col-md-3'>
+						<h3>會員中心</h3>
+						<hr />
+						<h5>會員資料</h5>
+						<h5>訂單管理</h5>
+						<h5>訊息中心</h5>
+						<h5>收藏管理</h5>
+						<h5>我的帳戶</h5>
+						<h5 id='clothes_management'>二手衣販售管理</h5>
+					</div>
+					<div class='col-md-9'>
+						<h3><span id="selling">開始賣衣服</span>/<span id="pending_list">待付款貨單狀態</span>/<span id="status">二手衣販售狀態</span></h3>
+						<hr />
+						<img src="img/buy/Buy4.png" alt="" />
+						<div id='insturction' class="col-md-12">
+							<div class="col-md-6">
+								<h3>恭喜您完成二手衣上架申請!</h3>
+								<p>請點選右方按鈕列印申請表並貼於外箱。</p>
+								<p>若不方便列印, 也可將下列所有資訊抄下後貼於外箱!</p>
+								<p>請務黏貼申請表, 物流士會至您的取貨地點收貨。</p>
+							</div>
+							<div class="col-md-6">
+								<img id='print' src="img/secondhand_management/print.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div id='receipt' class="col-md-10">
+						<div id='sender' class="col-md-8">
+								<div id="sender_name" class="bordered_div">
+									寄件人:<span id="sender_name_value"></span>
+									<hr class="dashed_hr"/>
+								</div>
+								<div id='sender_zip_code' class="bordered_div">
+									郵遞區號:<span id="sender_zip_code_value"></span>
+									<hr class="dashed_hr"/>
+								</div>
+								<div id="sender_address" class="bordered_div">
+									寄件人地址:<span id="sender_address_value"></span>
+									<hr class="dashed_hr"/>
+								</div>
+						</div>
+						<div id="serial_number" class='col-md-4'>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>

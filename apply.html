@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Getmore</title>
+ 
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/getmore_bootstrap.css"/>
+  <link rel="stylesheet" href="css/apply.css"/>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.0.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+</head>
+ 
+<body>
+  <div class='container'>
+    <div class='header'>
+      <nav class="navbar navbar-inverse" role="navigation">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>購物車</li>
+                <hr />
+								<li class='item_in_cart'>
+									<img class='col-md-2' src="img/clothes-01.png"/>
+									<p class='col-md-4'>product</p>
+									<div id='size' class="col-md-1">M</div>
+									<div id="price" class="col-md-3">2400元</div>
+									<div class="col-md-1">&times;</div>
+									<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+								</li>
+								<hr >
+								<li id="cart_summary">
+									<div class='col-md-8'>
+										<p>商品件數 共項 </p>
+										<p>消費金額 $ </p>
+									</div>
+									<button id='purchase' class="col-md-1 btn btn-danger" href="apply.html">確認結帳</button>
+								</li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+      <div id='header' class='row'>
+        <div id='logo' class='col-md-12'>
+          <a href='home.html'><img src='img/getmore.png' /></a>
+        </div>
+        <div class='col-md-7'>
+					<ul class='nav navbar-nav tags'>
+						<li>NEW</li>
+						<li>WOMEN</li>
+						<li>MEN</li>
+						<li>KIDS/BABY</li>
+					</ul>
+        </div>
+        <div id='header_right_section' class='col-md-5'>
+					<ul class='nav navbar-nav tags'>
+						<li>新手上路</li>
+						<li>賣衣服</li>
+						<li>About</li>
+					</ul>
+        </div>
+      </div>
+    </div><!-- header -->
+		<hr />
+    <div class='main'>
+      <div class='row'>
+        <div class='col-md-3'>
+          <h3>會員中心</h3>
+          <hr />
+					<h5>會員資料</h5>
+					<h5>訂單管理</h5>
+					<h5>訊息中心</h5>
+					<h5>收藏管理</h5>
+					<h5>我的帳戶</h5>
+					<h5 id='clothes_management'>二手衣販售管理</h5>
+        </div>
+        <div class='col-md-9'>
+					<h3><span id="selling">開始賣衣服</span>/<span id="pending_list">待付款貨單狀態</span>/<span id="status">二手衣販售狀態</span></h3>
+					<hr />
+					<img src="img/buy/Buy1.png" alt="" />
+					<h3>請輸入二手衣資訊</h3>
+          <form role="form">
+            <div class="form-group col-md-7">
+              <label for="product">商品敘述</label>
+              <input type="text" class="form-control" id="product">
+							<p>限定10字元以內。ex:ZARA 紅色夏季襯衫</p>
+						</div>
+						<div class="col-md-7">
+							<div class="col-md-4">
+								<h6>服裝</h6>
+								<div class="radio">
+									<label>
+										<input type="radio" name="style" value="option1" >
+										女裝
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="style" value="option1" >
+										男裝
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name='style' value="" >
+										童裝/baby
+									</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<h6>類別</h6>
+								<div class="radio">
+									<label>
+										<input type="radio" name="class1" value="" >
+										上衣
+									</label>
+								</div>
+								<div class="radio" name="class1">
+									<label>
+										<input type="radio" name="class1" value="" >
+										洋裝
+									</label>
+								</div>
+								<div class="radio" name="class1">
+									<label>
+										<input type="radio" name="class1" value="" >
+										褲子
+									</label>
+								</div>
+								<div class="radio" name="class1">
+									<label>
+										<input type="radio" name="class1" value="" >
+										裙子
+									</label>
+								</div>
+								<div class="radio" name="class1">
+									<label>
+										<input type="radio" name="class1" value="" >
+										外套
+									</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<h6>類別2</h6>
+								<div class="radio">
+									<label>
+										<input type="radio" name="class2" value="" >
+										一般外套
+									</label>
+								</div>
+								<div class="radio" name="class2">
+									<label>
+										<input type="radio" name="class2" value="" >
+										羽絨衣/背心
+									</label>
+								</div>
+							</div>
+						</div>
+            <div class="form-group col-md-7">
+              <label for="brand">品牌</label>
+							<input type="text" class="form-control" id="brand">
+							<p>請確實輸入品牌,GetMore不收假貨喔!</p>
+            </div>
+						<div class="form-group col-md-7">
+							<label for="">參考原價</label>
+							<select class="form-control"></select>
+						</div>
+            <div class="form-group col-md-7">
+              <label for="secondhand_price">二手販售價格</label>
+              <input type="text" class="form-control" id="secondhand_price">
+							<p>想要賣出的價格,建議為原價3~5折</p>
+						</div>
+            <div class="form-group col-md-7">
+              <label for="note">二手販售價格</label>
+              <input type="text" class="form-control" id="note">
+							<p>您認為需要備註的事項;限定14字元以內。ex:全新沒拆吊牌。</p>
+						</div>
+						<div class="col-md-7">
+							<button type="submit" class="btn btn-info">新增一筆</button>
+						</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class='footer'>
+      <hr />
+    </div>
+  </div>
+</body>
+</html>

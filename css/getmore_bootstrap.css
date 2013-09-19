@@ -1,0 +1,85 @@
+/* global setting */
+.bold_hr {
+	height: 3px;
+	background-color: #808080;
+}
+
+.dashed_hr {
+	border: dashed 1px;	
+	color: #808080;
+	margin: 25px 0;
+}
+
+.container {
+  width: 980px;
+  padding: 0px;
+}
+
+
+body {
+	font-family: "Microsoft JhengHei";
+}
+
+/* .footer { */
+/* 	background-color: #101010; */
+/* 	width: 980px; */
+/* 	height: 30px; */
+/* } */
+
+/* for #header */
+#header {
+	width: 980px;
+	margin-bottom: 10px;
+}
+
+#logo {
+	width: 272px;
+	height: 124px;
+	margin-bottom: 48px ;
+	margin-right: Auto;
+	margin-top: Auto;
+	margin-left: Auto;
+}
+
+.tags > li {
+	background: url('../img/IconStar.png') no-repeat center left;
+	padding-left: 15px;
+	margin-left: 25px;
+	font-size: 18px;
+}
+
+.tags > li:active {
+	color:#4cb2a2;
+	background: url('../img/IconStarSelected.png') no-repeat center left;
+}
+
+#header_right_section {
+	padding-left: 83px;
+}
+
+/* for cart */
+.dropdown-menu {
+	min-width: 560px;
+}
+
+.dropdown-menu > li {
+	margin: 10px;
+}
+
+.item_in_cart {
+	clear: both;
+	height: 90px;
+	text-align: center;
+	line-height: 90px;
+}
+
+#cart_summary {
+	min-height: 60px;
+}
+
+#purchase {
+	width:135px ;
+	height: 55px;
+	text-align: center;
+	font-size: 22px;
+}

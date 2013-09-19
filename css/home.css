@@ -1,0 +1,38 @@
+.carousel-indicators {
+	position: relative;
+	top: 25px;
+}
+
+.carousel-indicators > .active {
+	background-color: #4cb2a2;
+}
+
+.carousel-indicators > li {
+	background-color: #bbbebd;
+}
+
+#getmore_suggestions {
+	margin: 50px 20px;
+}
+
+h5 {
+	color: #e72d2c;
+	font-size: 22px;
+}
+
+.suggestion_list > li {
+	list-style-type: none;
+}
+
+.production {
+	width: 210px;
+	height: 390px;
+	background: blue;
+	position: relative;
+}
+
+.collection {
+	position: relative;
+	left: 175px;
+	top: 15px;
+}
