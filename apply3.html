@@ -1,189 +1,189 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <title>Getmore</title>
- 
-  <link rel="stylesheet" href="css/bootstrap.css"/>
-  <link rel="stylesheet" href="css/getmore_bootstrap.css"/>
-  <link rel="stylesheet" href="css/apply.css"/>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery-2.0.3.js"></script>
-  <script src="js/bootstrap.js"></script>
-</head>
- 
-<body>
-  <div class='container'>
-    <div class='header'>
-      <nav class="navbar navbar-inverse" role="navigation">
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Search</button>
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li>購物車</li>
-                <hr />
-								<li class='item_in_cart'>
-									<img class='col-md-2' src="img/clothes-01.png"/>
-									<p class='col-md-4'>product</p>
-									<div id='size' class="col-md-1">M</div>
-									<div id="price" class="col-md-3">2400元</div>
-									<div class="col-md-1">&times;</div>
-									<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
-								</li>
-								<hr >
-								<li id="cart_summary">
-									<div class='col-md-8'>
-										<p>商品件數 共項 </p>
-										<p>消費金額 $ </p>
-									</div>
-									<button id='purchase' class="col-md-1 btn btn-danger" href="apply.html">確認結帳</button>
-								</li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
-      <div id='header' class='row'>
-        <div id='logo' class='col-md-12'>
-          <a href='home.html'><img src='img/getmore.png' /></a>
-        </div>
-        <div class='col-md-7'>
-					<ul class='nav navbar-nav tags'>
-						<li>NEW</li>
-						<li>WOMEN</li>
-						<li>MEN</li>
-						<li>KIDS/BABY</li>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Getmore</title>
+
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/getmore_bootstrap.css"/>
+		<link rel="stylesheet" href="css/apply.css"/>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-2.0.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<div class='container'>
+			<div class='header'>
+				<nav class="navbar navbar-inverse" role="navigation">
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Search</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>購物車</li>
+							<hr />
+							<li class='item_in_cart'>
+							<img class='col-md-2' src="img/clothes-01.png"/>
+							<p class='col-md-4'>product</p>
+							<div id='size' class="col-md-1">M</div>
+							<div id="price" class="col-md-3">2400元</div>
+							<div class="col-md-1">&times;</div>
+							<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+							</li>
+							<hr >
+							<li id="cart_summary">
+							<div class='col-md-8'>
+								<p>商品件數 共項 </p>
+								<p>消費金額 $ </p>
+							</div>
+							<button id='purchase' class="col-md-1 btn btn-danger" href="apply.html">確認結帳</button>
+							</li>
+						</ul>
+						</li>
 					</ul>
-        </div>
-        <div id='header_right_section' class='col-md-5'>
-					<ul class='nav navbar-nav tags'>
-						<li>新手上路</li>
-						<li>賣衣服</li>
-						<li>About</li>
-					</ul>
-        </div>
-      </div>
-    </div><!-- header -->
-		<hr />
-    <div class='main'>
-      <div class='row'>
-        <div class='col-md-3'>
-          <h3>會員中心</h3>
-          <hr />
-					<h5>會員資料</h5>
-					<h5>訂單管理</h5>
-					<h5>訊息中心</h5>
-					<h5>收藏管理</h5>
-					<h5>我的帳戶</h5>
-					<h5 id='clothes_management'>二手衣販售管理</h5>
-        </div>
-        <div class='col-md-9'>
-					<h3><span id="selling">開始賣衣服</span>/<span id="pending_list">待付款貨單狀態</span>/<span id="status">二手衣販售狀態</span></h3>
-					<hr class="bold_hr"/>
-					<img src="img/buy/Buy3.png" alt="" />
-					<h3>本次二手衣販售</h3>
-					<hr class="dashed_hr"/>
-					<div id="info" class='col-md-8'>
-						<div class="row">
-							<div class="col-md-8">
-								件數
-							</div>
-							<div class="col-md-2" id='small_num'>
-								<span id="small_num_value"></span> 小件
-							</div>
-							<div class="col-md-2" id='big_num'>
-								<span id="big_num_value"></span> 大件
-							</div>
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-md-10">
-								洗衣費小計
-							</div>
-							<div class="col-md-2" id='washing_fee'>
-								
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-10">
-								運費小計
-							</div>
-							<div class="col-md-2" id='transport_fee'>
-								
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-10">
-								帳戶餘額
-							</div>
-							<div class="col-md-2" id='account_balance'>
-								
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-10">
-								本次扣抵
-							</div>
-							<div class="col-md-2" id='discount'>
-								
-							</div>
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-md-10">
-								總計
-							</div>
-							<div class="col-md-2" id='total_fee'>
-								
-							</div>
-						</div>
+				</div><!-- /.navbar-collapse -->
+				</nav>
+				<div id='header' class='row'>
+					<div id='logo' class='col-md-12'>
+						<a href='home.html'><img src='img/getmore.png' /></a>
 					</div>
-					<div id='getting_info'>
+					<div class='col-md-7'>
+						<ul class='nav navbar-nav tags'>
+							<li>NEW</li>
+							<li>WOMEN</li>
+							<li>MEN</li>
+							<li>KIDS/BABY</li>
+						</ul>
+					</div>
+					<div id='header_right_section' class='col-md-5'>
+						<ul class='nav navbar-nav tags'>
+							<li>新手上路</li>
+							<li>賣衣服</li>
+							<li>About</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- header -->
+			<hr />
+			<div class='main'>
+				<div class='row'>
+					<div class='col-md-3'>
+						<h4><img id='member_icon' src="img/secondhand_management/bottom_account.png" alt="" />會員中心</h4>
+						<hr class="bold_hr"/>
+						<h5>會員資料</h5>
+						<h5>訂單管理</h5>
+						<h5>訊息中心</h5>
+						<h5>收藏管理</h5>
+						<h5>我的帳戶</h5>
+						<h5 id='clothes_management'>二手衣販售管理</h5>
+					</div>
+					<div class='col-md-9'>
+						<h4><img id='clothe_icon' src="img/secondhand_management/picture_clothes.png" alt="" /><span id="selling">開始賣衣服</span> / <span id="pending_list">待付款貨單狀態</span> / <span id="status">二手衣販售狀態</span></h4>
+						<hr class="bold_hr" />
+						<img id='flow' src="img/secondhand_management/flow3.png" alt="" />
+						<h3>本次二手衣販售</h3>
 						<hr class="dashed_hr"/>
-						<h3>取件資訊</h3>
-						<p>您的姓名：<span id="name"></span></p>
-						<p>取件地址：<span id="address"></span></p>
-						<p>聯絡電話：<span id="phone"></span></p>
-					</div>
-					<div id="returning_info">
-						<hr class='dashed_hr'/>
-						<h3>送回資訊【若商品期滿未賣出】</h3>
-						<p>您的姓名：<span id="name"></span></p>
-						<p>取件地址：<span id="address"></span></p>
-						<p>聯絡電話：<span id="phone"></span></p>
-					</div>
-					<div id="paying_method">
+						<div id="info" class='col-md-8'>
+							<div class="row">
+								<div class="col-md-8">
+									件數
+								</div>
+								<div class="col-md-2" id='small_num'>
+									<span id="small_num_value"></span> 小件
+								</div>
+								<div class="col-md-2" id='big_num'>
+									<span id="big_num_value"></span> 大件
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-md-10">
+									洗衣費小計
+								</div>
+								<div class="col-md-2" id='washing_fee'>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-10">
+									運費小計
+								</div>
+								<div class="col-md-2" id='transport_fee'>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-10">
+									帳戶餘額
+								</div>
+								<div class="col-md-2" id='account_balance'>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-10">
+									本次扣抵
+								</div>
+								<div class="col-md-2" id='discount'>
+
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-md-10">
+									總計
+								</div>
+								<div class="col-md-2" id='total_fee'>
+
+								</div>
+							</div>
+						</div>
+						<div id='getting_info'>
+							<hr class="dashed_hr"/>
+							<h3>取件資訊</h3>
+							<p>您的姓名：<span id="name"></span></p>
+							<p>取件地址：<span id="address"></span></p>
+							<p>聯絡電話：<span id="phone"></span></p>
+						</div>
+						<div id="returning_info">
+							<hr class='dashed_hr'/>
+							<h3>送回資訊【若商品期滿未賣出】</h3>
+							<p>您的姓名：<span id="name"></span></p>
+							<p>取件地址：<span id="address"></span></p>
+							<p>聯絡電話：<span id="phone"></span></p>
+						</div>
+						<div id="paying_method">
+							<hr class='dashed_hr' />
+							<h3>請選擇洗衣費付款方式</h3>
+							<p id='ssl_description'>GetMore採用藍新科技信賴付款機制,受『128-bit SSL』加密保護,請您安心使用!</p>
+							<div class="radio" class='col-md-6'>
+								<label>
+									<input type="radio" name="paying_method" value="credit_card" >
+									信用卡
+								</label>
+							</div>
+							<div class="radio" class='col-md-6'>
+								<label>
+									<input type="radio" name="paying_method" value="webATM" >
+									webATM
+								</label>
+							</div>
+						</div>
 						<hr class='dashed_hr' />
-						<h3>請選擇洗衣費付款方式</h3>
-						<p id='ssl_description'>GetMore採用藍新科技信賴付款機制,受『128-bit SSL』加密保護,請您安心使用!</p>
-						<div class="radio" class='col-md-6'>
-							<label>
-								<input type="radio" name="paying_method" value="credit_card" >
-								信用卡
-							</label>
-						</div>
-						<div class="radio" class='col-md-6'>
-							<label>
-								<input type="radio" name="paying_method" value="webATM" >
-								webATM
-							</label>
+						<div id='buttons' class="col-md-7">
+							<button type="submit" class='btn btn-default'>上一步</button>
+							<button type="submit" class="btn btn-info">確認付款</button>
 						</div>
 					</div>
-					<hr class='dashed_hr' />
-					<div class="col-md-7">
-						<button type="submit" class='btn btn-default'>上一步</button>
-						<button type="submit" class="btn btn-info">確認付款</button>
-					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-</body>
-</html>
+		</body>
+	</html>

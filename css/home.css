@@ -12,7 +12,7 @@
 }
 
 #getmore_suggestions {
-	margin: 50px 20px;
+	margin: 50px 0px;
 }
 
 h5 {
@@ -20,14 +20,9 @@ h5 {
 	font-size: 22px;
 }
 
-.suggestion_list > li {
-	list-style-type: none;
-}
-
 .production {
 	width: 210px;
 	height: 390px;
-	background: blue;
 	position: relative;
 }
 
@@ -36,3 +31,66 @@ h5 {
 	left: 175px;
 	top: 15px;
 }
+
+#log_in {
+	position: relative;
+	right: 3px;
+	bottom: 3px;
+}
+
+#getmore_login, #fb_login {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.modal-title {
+	text-align: center;
+}
+
+#fb_login > h4 {
+	text-align: center;
+}
+
+#fb_login_btn {
+	margin: 0 40px;
+}
+
+#getmore_login > .row > div {
+	padding-left: 0;
+}
+
+#getmore_login > .row {
+	padding-bottom: 10px;
+}
+
+#getmore_login_instruction {
+	padding-top: 13px;
+}
+
+.announcement {
+	color: #717170;
+	font-size: 12px;
+}
+
+#start_to_getmore {
+	padding 0;
+}
+
+.form-group > input {
+	width: 375px;
+}
+#registration {
+	padding: 10px 0;
+	color: #717170;
+	font-size: 12px;
+}
+
+#forget_password {
+	color: #e72d2c;
+	padding-right: 25px;
+}
+
+#registration > a {
+	color: #3e9b95;
+}
+

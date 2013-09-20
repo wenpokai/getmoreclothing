@@ -1,4 +1,13 @@
+/* override */
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+	margin-right: auto;
+}
 /* global setting */
+nav {
+	width: 980px;
+	margin: 0 auto;
+}
+
 .bold_hr {
 	height: 3px;
 	background-color: #808080;
@@ -8,6 +17,10 @@
 	border: dashed 1px;	
 	color: #808080;
 	margin: 25px 0;
+}
+
+.bordered_div {
+	border: solid 1px #b7b7b7;
 }
 
 .container {
@@ -30,6 +43,7 @@ body {
 #header {
 	width: 980px;
 	margin-bottom: 10px;
+	margin-top: 50px;
 }
 
 #logo {
@@ -82,4 +96,58 @@ body {
 	height: 55px;
 	text-align: center;
 	font-size: 22px;
+}
+
+/* suggestion list carousel */
+.suggestion_list {
+	width: 980px;
+}
+
+#suggestions-carousel > .carousel-inner {
+	height: 420px;
+}
+
+.suggestion_list > li {
+	list-style-type: none;
+}
+
+.slide_item {
+	float: left;
+	width: 220px;
+	margin: 0 5px;
+}
+
+.carousel-control .icon-prev:before {
+  content: url('../img/ButtonLeftGray.png');
+}
+
+.carousel-control .icon-prev:active {
+	content: url('../img/ButtonLeft.png')
+}
+
+.carousel-control .icon-next:before {
+  content: url('../img/ButtonRightGray.png');
+}
+
+.carousel-control .icon-next:active {
+  content: url('../img/ButtonRight.png');
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+.cloth_name {
+	margin-bottom: 3px;
+}
+
+.cloth_original_price {
+	color: #717170;
+	text-decoration: line-through;
+	margin-bottom: 3px;
+}
+
+.cloth_current_price {
+	color: #e72d2c;
+	margin-bottom: 3px;
 }
