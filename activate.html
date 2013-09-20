@@ -6,7 +6,7 @@
 
 		<link rel="stylesheet" href="css/bootstrap.css"/>
 		<link rel="stylesheet" href="css/getmore_bootstrap.css"/>
-		<link rel="stylesheet" href="css/apply.css"/>
+		<link rel="stylesheet" href="css/activate.css"/>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery-2.0.3.js"></script>
 		<script src="js/bootstrap.js"></script>
@@ -18,10 +18,10 @@
 				<nav class="navbar-fixed-top navbar-inverse" role="navigation">
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
-          <form class="navbar-form navbar-left" role="search">
+					<form class="navbar-form navbar-left" role="search">
 						<input id='nav_search_input' type="text" class="form-control" placeholder="Search">
 						<button id='nav_search_btn' type="submit" class="btn btn-default"></button>
-          </form>
+					</form>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a>
@@ -84,19 +84,47 @@
 						<h5 id='clothes_management'>二手衣販售管理</h5>
 					</div>
 					<div class='col-md-9'>
-						<h4><img id='clothe_icon' src="img/secondhand_management/picture_clothes.png" alt="" /><span id="selling">開始賣衣服</span> / <span id="pending_list">待付款貨單狀態</span> / <span id="status">二手衣販售狀態</span></h4>
+						<h4><img id='key_icon' src="img/secondhand_management/bottom_key.png" alt="" />權限開通</h4>
 						<hr class="bold_hr" />
-						<img id='flow' src="img/secondhand_management/flow2.png" alt="" />
-						<h3>請輸入取件資訊</h3>
-						<hr />
-						<form role="form">
-							<div class="form-group col-md-7">
-								<label for="name">姓名</label>
-								<input type="text" class="form-control" id="name">
-								<p class='description'>ex:王小咩</p>
+						<h3>為確保正確將售後所得交給您,請完成以下權限開通程序</h3>
+						<form role='form'>
+							<div id='account' class="form-group col-md-7">
+								<label>帳號：</label><span id="account_vlaue"></span>
 							</div>
 							<div class="form-group col-md-7">
-								<label for="address">取件地址</label><br>
+								<label for="chinese_name">中文姓名</label>
+								<input type="text" class="form-control" id="chinese_name">
+								<p class='description'>請正確填入個人身分證上真實姓名。</p>
+							</div>
+							<div class="form-group col-md-7">
+								<label>
+									<input type="radio" name="gender" id="male" value="male">
+									先生
+								</label>
+								<label>
+									<input type="radio" name="gender" id="female" value="female">
+									小姐
+								</label>
+							</div>
+							<div class="form-group col-md-7">
+								<label>生日</label>
+								<select name="year" id="year">
+
+								</select>年
+								<select name="month" id="month">
+
+								</select>月
+								<select name="day" id="day">
+
+								</select>日
+							</div>
+							<div class="form-group col-md-7">
+								<label for="id">身份證字號</label>
+								<input type="text" class="form-control" id="id">
+								<p class='description'>請正確填入身份證上身分證字號。</p>
+							</div>
+							<div class="form-group col-md-7">
+								<label>戶籍地址</label>
 								<select name="" id="">
 									<option>縣市</option>
 								</select>
@@ -107,74 +135,24 @@
 								<input type="text" id="address" value="" />
 							</div>
 							<div class="form-group col-md-7">
-								<label for="phone">聯絡電話</label>
-								<input type="text" class="form-control" id="phone" value="" />
-								<p class='description'>請留下您的手機號碼,宅配人員將會與您聯繫。</p>
+								<label for="phone">手機號碼</label>
+								<input type="text" class="form-control" id="phone">
+								<p class='description'>簡訊認證用。</p>
+							</div>
+							<div class="checkbox col-md-7">
+								<label>
+									<input type="checkbox"> 我已詳細閱讀並同意使用條款
+								</label>
+							</div>
+							<div id='submit' class="col-md-7">
+								<button class="btn btn-info " type='submit'>確認</button>
 							</div>
 						</form>
-						<div id="returning_info" class='col-md-11'>
-							<h3>期滿送回資訊</h3>
-							<hr />
-							<p class='description' id='returning_description'>您可以選擇不同於取件的地址,抑或將您的衣服捐給慈善機構 GetMore將於衣服期滿後協助為您處理。</p><br>
-							<div class="radio" class='col-md-6'>
-								<label>
-									<input type="radio" name="style" value="option1" >
-									期滿後，未售出之商品全數捐給慈善機構，不用還我！
-								</label>
-							</div>
-							<div class="radio" class='col-md-6'>
-								<label>
-									<input type="radio" name="style" value="option1" >
-									請寄還給我，同取件資訊。
-								</label>
-							</div>
-						</div>
-						<form role="form">
-							<div class="form-group col-md-7">
-								<label for="name">姓名</label>
-								<input type="text" class="form-control" id="name">
-								<p class='description'>ex:王小咩</p>
-							</div>
-							<div class="form-group col-md-7">
-								<label for="address">取件地址</label><br>
-								<select name="" id="">
-									<option>縣市</option>
-								</select>
-								<select name="" id="">
-									<option>鄉鎮市區</option>
-								</select>
-								<input id='address_code' type="text" value="" />
-								<input type="text" id="address" value="" />
-							</div>
-							<div class="form-group col-md-7">
-								<label for="phone">聯絡電話</label>
-								<input type="text" class="form-control" id="phone" value="" />
-								<p class='description'>請留下您的手機號碼,宅配人員將會與您聯繫。</p>
-							</div>
-							<div class="form-group col-md-7">
-								<label for="time">配送時間</label>
-								<select name="time" id="">
-									<option>任意</option>
-								</select>
-							</div>
-							<div class="form-group col-md-7">
-								<label for="">發票種類</label><br>
-								<label>
-									<input type="radio" name="receipt" value="option1" >
-									捐贈（捐贈單位：創世基金會）
-								</label>
-								<label>
-									<input type="radio" name="receipt" value="option1" >
-									三聯發票<input type="text" name="" id="" value="" placeholder='統一編號' />
-								</label>
-							</div>
-						</form>
-						<div id='buttons' class="col-md-7">
-							<button type="submit" class='btn btn-default'>上一步</button>
-							<button type="submit" class="btn btn-info">下一步</button>
-						</div>
 					</div>
-				</div>
+				</div><!-- row -->
+			</div><!-- maing -->
+			<div class='footer'>
+				<hr />
 			</div>
 		</div>
 	</body>

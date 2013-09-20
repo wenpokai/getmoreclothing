@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Getmore</title>
+
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/getmore_bootstrap.css"/>
+		<link rel="stylesheet" href="css/activate.css"/>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-2.0.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<div class="modal fade" id='ActicateSuccessfullyModal'>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">恭喜您完成認證！</h4>
+					</div>
+					<div class="modal-body">
+						<p>歡迎您加入GetMore！</p>
+						<p>您已經可以進行二手衣販售管理。</p>
+					</div>
+					<div id="start_btn">
+						<a class='btn btn-info' href="#">開始GetMore</a>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<div class='container'>
+			<div class='header'>
+				<nav class="navbar-fixed-top navbar-inverse" role="navigation">
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<form class="navbar-form navbar-left" role="search">
+						<input id='nav_search_input' type="text" class="form-control" placeholder="Search">
+						<button id='nav_search_btn' type="submit" class="btn btn-default"></button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>購物車</li>
+							<hr />
+							<li class='item_in_cart'>
+							<img class='col-md-2' src="img/clothes-01.png"/>
+							<p class='col-md-4'>product</p>
+							<div id='size' class="col-md-1">M</div>
+							<div id="price" class="col-md-3">2400元</div>
+							<div class="col-md-1">&times;</div>
+							<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+							</li>
+							<hr >
+							<li id="cart_summary">
+							<div class='col-md-8'>
+								<p>商品件數 共項 </p>
+								<p>消費金額 $ </p>
+							</div>
+							<button id='purchase' class="col-md-1 btn btn-danger" href="apply.html">確認結帳</button>
+							</li>
+						</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+				</nav>
+				<div id='header' class='row'>
+					<div id='logo' class='col-md-12'>
+						<a href='home.html'><img src='img/getmore.png' /></a>
+					</div>
+					<div class='col-md-7'>
+						<ul class='nav navbar-nav tags'>
+							<li>NEW</li>
+							<li>WOMEN</li>
+							<li>MEN</li>
+							<li>KIDS/BABY</li>
+						</ul>
+					</div>
+					<div id='header_right_section' class='col-md-5'>
+						<ul class='nav navbar-nav tags'>
+							<li>新手上路</li>
+							<li>賣衣服</li>
+							<li>About</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- header -->
+			<hr />
+			<div class='main'>
+				<div class='row'>
+					<div class='col-md-3'>
+						<h4><img id='member_icon' src="img/secondhand_management/bottom_account.png" alt="" />會員中心</h4>
+						<hr class="bold_hr"/>
+						<h5>會員資料</h5>
+						<h5>訂單管理</h5>
+						<h5>訊息中心</h5>
+						<h5>收藏管理</h5>
+						<h5>我的帳戶</h5>
+						<h5 id='clothes_management'>二手衣販售管理</h5>
+					</div>
+					<div class='col-md-9'>
+							<h4><img id='key_icon' src="img/secondhand_management/bottom_key.png" alt="" />權限開通</h4>
+							<hr class="bold_hr" />
+						<div id='input_code'>
+							請輸入您手機收到的驗證碼:<input type="text" name="verification_code" id="verification_code"/>
+							<button data-toggle='modal' href='#ActicateSuccessfullyModal' type="submit" class="btn btn-info btn-xs">確認</button><span id="error">認證失敗!您輸入的認證碼不正確,請重新輸入!</span>
+						</div>
+						<div id='resend_code'>
+							如果您沒有收到或遺失認證碼簡訊：<button type="submit" class="btn btn-xs">重新認證</button>
+						</div>
+					</div>
+				</div><!-- row -->
+			</div><!-- main -->
+			<div class='footer'>
+				<hr />
+			</div>
+		</div><!-- container -->
+	</body>
+</html>

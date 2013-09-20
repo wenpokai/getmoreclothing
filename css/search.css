@@ -2,6 +2,20 @@ h6 {
 	color: #e72d2c;
 }
 
+#search_brand_input {
+	width: 200px;
+	height: 30px;
+	padding-top: 0px;
+	padding-right: 45px;
+}
+
+#search_brand_btn {
+	margin-left: -35px;
+	height: 30px;
+	width: 30px;
+	background: url('../img/SearchIcon.png') no-repeat center center;
+}
+
 #pattern {
 	height: 300px;
 }

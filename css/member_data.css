@@ -1,0 +1,18 @@
+#pen_icon, #member_icon {
+	position: relative;
+	top: 3px;
+	margin-right: 30px;
+}
+
+.bold_hr {
+	margin-top: 0px;
+}
+
+h4 {
+	margin-bottom: 0;
+}
+
+.choosed {
+	color: #008192; 
+}
+

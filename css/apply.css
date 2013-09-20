@@ -43,11 +43,6 @@ div {
 	height: 255px;
 }
 
-.description {
-	font-style: italic;
-	float: right;
-}
-
 #clothes_management {
 	color: #4cb2a2;
 }
@@ -128,4 +123,9 @@ div {
 
 #center_spliter {
 	margin: 30px 0;
+}
+
+#next_step {
+	position: relative;
+	top: 200px;
 }

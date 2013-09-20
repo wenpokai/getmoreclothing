@@ -28,22 +28,55 @@ nav {
   padding: 0px;
 }
 
+.description {
+	font-style: italic;
+	float: right;
+}
 
 body {
 	font-family: "Microsoft JhengHei";
 }
 
-/* .footer { */
-/* 	background-color: #101010; */
-/* 	width: 980px; */
-/* 	height: 30px; */
-/* } */
+.panel {
+	background-color: #cccccb;
+	margin: 0;
+}
 
+.panel-body > div > h4 {
+	color: #989898;
+	text-align: center;
+}
+
+.panel-footer {
+	text-align: center;
+	padding: 0;
+	background-color: black;
+}
+
+.panel-footer > p {
+	margin: 0;
+	color: #d4d4d4;
+}
+/* nav bar saerch */
+#nav_search_input {
+	width: 200px;
+	height: 30px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 45px;
+}
+
+#nav_search_btn {
+	margin-left: -35px;
+	height: 30px;
+	width: 30px;
+	background: url('../img/SearchIcon.png') no-repeat center center;
+}
 /* for #header */
 #header {
-	width: 980px;
 	margin-bottom: 10px;
 	margin-top: 50px;
+	background-color: #FFFFFF;
 }
 
 #logo {
@@ -98,6 +131,11 @@ body {
 	font-size: 22px;
 }
 
+.collection {
+	position: relative;
+	left: 175px;
+	top: 25px;
+}
 /* suggestion list carousel */
 .suggestion_list {
 	width: 980px;
