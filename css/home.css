@@ -21,9 +21,21 @@ h5 {
 }
 
 .production {
-	width: 210px;
-	height: 390px;
-	position: relative;
+	width: 212px;
+	height: 360px;
+	margin: 0 7px 10px 7px;
+	padding: 0;
+	border: solid 1px #b7b7b5;
+	background: #ffffff;
+}
+
+.production > p {
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.production > img {
+	margin-top: -20px;
 }
 
 .collection {
@@ -84,6 +96,7 @@ h5 {
 .form-group > input {
 	width: 375px;
 }
+
 #registration {
 	padding: 10px 0;
 	color: #717170;

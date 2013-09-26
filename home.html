@@ -19,12 +19,10 @@
 				<nav class="navbar-fixed-top navbar-inverse" role="navigation">
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<!--  <form class="navbar-form navbar-left" role="search"> 
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default">Search</button>
-					</form> -->
+          <form id='navbar_search' class="navbar-form navbar-left" role="search">
+						<input id='nav_search_input' type="text" class="form-control" placeholder="Search">
+						<button id='nav_search_btn' type="submit" class="btn btn-default"></button>
+          </form>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
 						<!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a> -->
@@ -272,10 +270,31 @@
 						</div>
 					</div>
 				</div>
-				<div id='new_products'>
-					<h5>GetMore 推薦</h5>
+				<div id='new_products' class='clearfix'>
+					<h5>新鮮貨</h5>
 					<hr />
-					<div class="production">
+					<div class="production col-md-3">
+						<img class='collection' src="img/collect.png" alt="collect" />
+						<img src="img/clothes-02.png">
+						<p class='cloth_name'>七分粉格襯衫</p>
+						<p class='cloth_original_price'>NT$ 2100</p>
+						<p class='cloth_current_price'>NT$ 450</p>
+					</div>
+					<div class="production col-md-3">
+						<img class='collection' src="img/collect.png" alt="collect" />
+						<img src="img/clothes-02.png">
+						<p class='cloth_name'>七分粉格襯衫</p>
+						<p class='cloth_original_price'>NT$ 2100</p>
+						<p class='cloth_current_price'>NT$ 450</p>
+					</div>
+					<div class="production col-md-3">
+						<img class='collection' src="img/collect.png" alt="collect" />
+						<img src="img/clothes-02.png">
+						<p class='cloth_name'>七分粉格襯衫</p>
+						<p class='cloth_original_price'>NT$ 2100</p>
+						<p class='cloth_current_price'>NT$ 450</p>
+					</div>
+					<div class="production col-md-3">
 						<img class='collection' src="img/collect.png" alt="collect" />
 						<img src="img/clothes-02.png">
 						<p class='cloth_name'>七分粉格襯衫</p>

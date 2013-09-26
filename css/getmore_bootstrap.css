@@ -5,6 +5,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 /* global setting */
 nav {
 	width: 980px;
+	height: 40px;
 	margin: 0 auto;
 }
 
@@ -64,6 +65,8 @@ body {
 	padding-bottom: 0px;
 	padding-top: 0px;
 	padding-right: 45px;
+	background-color: #101010;
+	color: #ffffff;
 }
 
 #nav_search_btn {
@@ -72,10 +75,21 @@ body {
 	width: 30px;
 	background: url('../img/SearchIcon.png') no-repeat center center;
 }
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+	background-color: #dc2733;
+	color: #ffffff;
+	height: 40px;
+}
+
+#navbar_search {
+	margin-top: 5px;
+}
+
 /* for #header */
 #header {
 	margin-bottom: 10px;
-	margin-top: 50px;
+	margin-top: 40px;
 	background-color: #FFFFFF;
 }
 
@@ -95,7 +109,7 @@ body {
 	font-size: 14px;
 }
 
-.tags > li:active {
+.tags > li:active, .tags > li:hover {
 	color:#4cb2a2;
 	background: url('../img/IconStarSelected.png') no-repeat center left;
 }
@@ -141,10 +155,21 @@ body {
 	width: 980px;
 }
 
+#suggestions-carousel {
+	position: relative;
+	width: 1120px;
+	right: 70px;
+	padding-right: 40px;
+	padding-left: 60px;
+}
+
 #suggestions-carousel > .carousel-inner {
 	height: 420px;
 }
 
+/* #suggestions-carousel > .carousel { */
+/* 	padding: 0 60px; */
+/* } */
 .suggestion_list > li {
 	list-style-type: none;
 }
@@ -188,4 +213,22 @@ body {
 .cloth_current_price {
 	color: #e72d2c;
 	margin-bottom: 3px;
+}
+
+.production {
+	width: 212px;
+	height: 360px;
+	margin: 0 7px 10px 7px;
+	padding: 0;
+	border: solid 1px #b7b7b5;
+	background: #ffffff;
+}
+
+.production > p {
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.production > img {
+	margin-top: -20px;
 }
