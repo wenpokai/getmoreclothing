@@ -19,35 +19,12 @@
 				<nav class="navbar-fixed-top navbar-inverse" role="navigation">
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
-          <form id='navbar_search' class="navbar-form navbar-left" role="search">
-						<input id='nav_search_input' type="text" class="form-control" placeholder="Search">
-						<button id='nav_search_btn' type="submit" class="btn btn-default"></button>
-          </form>
+					<ul class="nav navbar-nav navbar-left">
+						<li><a data-toggle="modal" href="#logInModal"><img src="img/home.png" alt="" id='log_in'/></a></li>
+						<li><a data-toggle="modal" href="#logInModal">GetMore Blog</a></li>
+					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-						<!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown">購物車<b class="caret"></b></a> -->
-						<ul class="dropdown-menu">
-							<li>購物車</li>
-							<hr />
-							<li class='item_in_cart'>
-							<img class='col-md-2' src="img/clothes-01.png"/>
-							<p class='col-md-4'>product</p>
-							<div id='size' class="col-md-1">M</div>
-							<div id="price" class="col-md-3">2400元</div>
-							<div class="col-md-1">&times;</div>
-							<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
-							</li>
-							<hr >
-							<li id="cart_summary">
-							<div class='col-md-8'>
-								<p>商品件數 共項 </p>
-								<p>消費金額 $ </p>
-							</div>
-							<button id='purchase' class="col-md-1 btn btn-danger" href="apply.html">確認結帳</button>
-							</li>
-						</ul>
-						</li>
-						<li><a data-toggle="modal" href="#logInModal"><img src="img/login.png" alt="" id='log_in'/> Log In</a></li>
+						<li><a data-toggle="modal" href="#signUpModal"><img src="img/login.png" alt="" id='log_in'/> Log In</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 				</nav>
@@ -55,7 +32,7 @@
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h4 class="modal-title">會員入口</h4>
+								<h4 class="modal-title">註冊會員</h4>
 							</div>
 							<div class="modal-body">
 								<div class="fb_login">
@@ -66,20 +43,20 @@
 								<div id="getmore_login">
 									<div class="row">
 										<div class="col-md-4">
-											<h4>會員登入</h4> 
+											<h4>註冊會員</h4> 
 										</div>
 										<div class="col-md-8 pull-right announcement getmore_instruction">
-											還未是GetMore之會員,請在此註冊!
+											還不是GetMore的會員嗎？ 免費加入！
 										</div>
 									</div>
 									<form role="form">
 										<div class="form-group">
-											<label for="nickname">信箱</label> <div class='col-md-5 pull-right description'>14字元以內</div>
-											<input type="text" class="form-control" id="nickname" placeholder="暱稱">
-										</div>
-										<div class="form-group">
 											<label for="sign_up_email">信箱</label><div class='col-md-5 pull-right description'>此為您的會員登入帳號</div>
 											<input type="email" class="form-control" id="sign_up_email" placeholder="email">
+										</div>
+										<div class="form-group">
+											<label for="nickname">暱稱</label> <div class='col-md-5 pull-right description'>14字元以內</div>
+											<input type="text" class="form-control" id="nickname" placeholder="暱稱">
 										</div>
 										<div class="form-group">
 											<label for="password">密碼</label>
@@ -98,6 +75,7 @@
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
 				</div><!-- /.modal -->
+
 				<div class="modal fade" id='logInModal'>
 					<div class="modal-dialog">
 						<div class="modal-content">
@@ -116,7 +94,7 @@
 											<h4>會員登入</h4> 
 										</div>
 										<div class="getmore_instruction col-md-8 pull-right announcement">
-											若已是GetMore之會員,請在此登入!
+											若已是GetMore的會員,請在此登入!
 										</div>
 									</div>
 									<form role="form">
@@ -134,6 +112,21 @@
 										</div>
 									</form>
 								</div>
+							</div>
+							<div class="modal-footer">
+								<p class='announcement'>已成為「會員」或是點擊「用facebook 登入」按鈕的同時,表示您已詳讀並同意GetMore的<a href="#">使用者條款</a>。</p>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				<div class="modal fade" id='videomodel'>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">GetMore 理念</h4>
+							</div>
+							<div class="modal-body">
+								<iframe src="//player.vimeo.com/video/74211715" width="500" height="364" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
 							</div>
 							<div class="modal-footer">
 								<p class='announcement'>已成為「會員」或是點擊「用facebook 登入」按鈕的同時,表示您已詳讀並同意GetMore的<a href="#">使用者條款</a>。</p>
@@ -167,25 +160,22 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
 						<div class="item active">
-							<img src="img/banner/banner-02.png">
+							<img src="img/banner/banner-02.jpg">
 						</div>
 						<div class="item">
-							<img src="img/banner/banner-03.png">
+							<img src="img/banner/banner-03.jpg">
 						</div>
 						<div class="item">
-							<img src="img/banner/banner-05.png">
+							<img src="img/banner/banner-05.jpg">
 						</div>
 						<div class="item">
-							<img src="img/banner/banner-06.png">
+							<img src="img/banner/banner-06.jpg">
 						</div>
 						<div class="item">
-							<img src="img/banner/banner-07.png">
+							<img src="img/banner/banner-07.jpg">
 						</div>
 						<div class="item">
-							<img src="img/banner/banner-09.png">
-						</div>
-						<div class="item">
-							<img src="img/banner/banner-10.png">
+							<img src="img/banner/banner-08	.jpg">
 						</div>
 					</div>
 
@@ -208,126 +198,99 @@
 						<li data-target="#main-carousel" data-slide-to="7"></li>
 					</ol>
 				</div>
-			</div>
-			<div id="getmore_suggestions">
-				<h5>GetMore 推薦</h5>
-				<hr />
-				<div class="container">
-					<div class="row">
-						<div id="suggestions-carousel" class="carousel slide col-md-12">
-							<div class="carousel-inner">
-								<div class="item active">
-									<ul class='suggestion_list'>
-										<li class='slide_item'>
-										<div class='img-thumbnail'>
-											<img src="img/clothes-02.png">
-											<hr />
-											<p class='cloth_name'>七分粉格襯衫</p>
-											<p class='cloth_original_price'>NT$ 2100</p>
-											<p class='cloth_current_price'>NT$ 450</p>
-										</div>
-										</li>
-										<li class='slide_item'>
-										<div class='img-thumbnail'>
-											<img src="img/clothes-02.png">
-											<hr />
-											<p class='cloth_name'>七分粉格襯衫</p>
-											<p class='cloth_original_price'>NT$ 2100</p>
-											<p class='cloth_current_price'>NT$ 450</p>
-										</div>
-										</li>
-										<li class='slide_item'>
-										<div class='img-thumbnail'>
-											<img src="img/clothes-02.png">
-											<hr />
-											<p class='cloth_name'>七分粉格襯衫</p>
-											<p class='cloth_original_price'>NT$ 2100</p>
-											<p class='cloth_current_price'>NT$ 450</p>
-										</div>
-										</li>
-										<li class='slide_item'>
-										<div class='img-thumbnail'>
-											<img src="img/clothes-02.png">
-											<hr />
-											<p class='cloth_name'>七分粉格襯衫</p>
-											<p class='cloth_original_price'>NT$ 2100</p>
-											<p class='cloth_current_price'>NT$ 450</p>
-										</div>
-										</li>
-									</ul>
-								</div>
-								<div class="item">
-								</div>
-							</div>
 
-							<!-- Controls -->
-							<a class="left carousel-control" href="#suggestions-carousel" data-slide="prev">
-								<span class="icon-prev"></span>
-							</a>
-							<a class="right carousel-control" href="#suggestions-carousel" data-slide="next">
-								<span class="icon-next"></span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div id='new_products' class='clearfix'>
-					<h5>新鮮貨</h5>
-					<hr />
-					<div class="production col-md-3">
-						<img class='collection' src="img/collect.png" alt="collect" />
-						<img src="img/clothes-02.png">
-						<p class='cloth_name'>七分粉格襯衫</p>
-						<p class='cloth_original_price'>NT$ 2100</p>
-						<p class='cloth_current_price'>NT$ 450</p>
-					</div>
-					<div class="production col-md-3">
-						<img class='collection' src="img/collect.png" alt="collect" />
-						<img src="img/clothes-02.png">
-						<p class='cloth_name'>七分粉格襯衫</p>
-						<p class='cloth_original_price'>NT$ 2100</p>
-						<p class='cloth_current_price'>NT$ 450</p>
-					</div>
-					<div class="production col-md-3">
-						<img class='collection' src="img/collect.png" alt="collect" />
-						<img src="img/clothes-02.png">
-						<p class='cloth_name'>七分粉格襯衫</p>
-						<p class='cloth_original_price'>NT$ 2100</p>
-						<p class='cloth_current_price'>NT$ 450</p>
-					</div>
-					<div class="production col-md-3">
-						<img class='collection' src="img/collect.png" alt="collect" />
-						<img src="img/clothes-02.png">
-						<p class='cloth_name'>七分粉格襯衫</p>
-						<p class='cloth_original_price'>NT$ 2100</p>
-						<p class='cloth_current_price'>NT$ 450</p>
+			<div class="homead">
+				<div class="panel-body">
+					<div class="homead-box">
+					<div class="col-md-4">
+            		 <a data-toggle="modal" href="#videomodel"><img src="img/gray.png" alt=""></a>
+          			</div>	
+					
+					<div class="col-md-4">
+            		 <img src="img/gray.png" alt=""> 
+          			</div>		
+					
+					<div class="col-md-4">
+            		 <img src="img/gray.png" alt=""> 
+          			</div>	
 					</div>
 				</div>
 			</div>
 			<div class="panel">
 				<div class="panel-body">
-					<div class="col-md-3">
-						<h4>開始GetMore</h4>
+					<div class="panel-box">
+					<div class="col-md-2">
+						<h5>關於GetMore</h5>
+						<div class="panel-link">
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>GetMore簡介</h6>
+							</a>
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>GetMore Energy</h6>
+							</a>
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>GetMore理念</h6>
+							</a>
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>合作夥伴</h6>
+							</a>
+						</div>
 					</div>
 					<div class='col-md-2'>
-						<h4>關於 GetMore</h4>
+						<h5>開始GetMore</h5>
+						<div class="panel-link">
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>我要賣衣服</h6>
+							</a>
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>我要洗衣服</h6>
+							</a>
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>我要買衣服</h6>
+							</a>
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>使用條款</h6>
+							</a>
+						</div>
 					</div>
 					<div class='col-md-2'>
-						<h4>購買說明</h4>
+						<h5>購買說明</h5>
+						<div class="panel-link">
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>付款與運費</h6>
+							</a>
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>配送方式</h6>
+							</a>
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>關於退貨</h6>
+							</a>
+						</div>
 					</div>
 					<div class='col-md-2'>
-						<h4>公益服務</h4>
+						<h5>公益服務</h5>
+						<div class="panel-link">
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6>GetMore Love</h6>
+							</a>
+						</div>
 					</div>
-					<div class='col-md-3'>
-						<h4>客服中心</h4>
+					<div class='col-md-2'>
+						<h5>客服中心</h5>
+						<div class="panel-link">
+							<a href="http://blog.getmore.cc/?page_id=119">
+							<h6> Q&A </h6>
+							</a>
+							<h4> Contact us <br> service@getmore.cc </h4>
+							<img src="img/fb.png" alt="" />
+						</div>
+					</div>
 					</div>
 				</div>
 				<div class="panel-footer">
 					<p>咩斯特數位整合有限公司 Copyright © 2013 GetMore.cc INC. All rights reserved.</p>
-					<div id="footer_links">
-						<a href="#">使用條款</a>
-						<a href="#">隱私權政策</a>
-					</div>
 				</div>
 			</div>
+		</div>
 		</body>
 	</html>
