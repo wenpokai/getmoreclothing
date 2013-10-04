@@ -112,45 +112,7 @@
 	color: #3e9b95;
 }
 
-.panel-box {
-	width: 925px;
-	height: auto;
-	margin-left: 20px;
-	padding-bottom: 40px; 
-}
 
-.panel-box .col-md-2 {
-	padding-left:40px ;
-	
-}
-
-.col-md-2 > h5 {
-	color: #999999;
-	font-size: 16px;
-	
-}
-
-
-.panel-link > a h6 {
-	color: #4E4D4D;
-	font-size: 12px;
-	margin-top: 8px;
-	margin-bottom: 8px;
-	
-}
-
-.panel-link > h4 {
-	color: #AAAAAA;
-	font-size: 12px;
-	margin-top: 8px;
-	margin-bottom: 8px;
-	
-}
-
-.panel-link {
-	margin-top:20px;
-	
-}
 
 .carousel{
 	margin-bottom:60px;

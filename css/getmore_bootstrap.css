@@ -43,21 +43,29 @@ body {
 	margin: 0;
 }
 
+.panel > a {
+	target=_blank 	
+}
+
 .panel-body > div > h4 {
 	color: #989898;
 	text-align: center;
 }
 
-.panel-footer {
-	text-align: center;
-	padding: 0;
-	background-color: black;
-}
 
 .panel-footer > p {
 	margin: 0;
-	color: #d4d4d4;
+	color: #888888;
+	padding-right:20px; 
+	font-size: 10px;
+	text-align: right;
 }
+
+.panel-footer > hr {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
 /* nav bar saerch */
 #nav_search_input {
 	width: 200px;
@@ -232,3 +240,49 @@ body {
 .production > img {
 	margin-top: -20px;
 }
+
+.panel-box {
+	width: 925px;
+	height: auto;
+	margin-left: 20px;
+	padding-bottom: 40px; 
+}
+
+.panel-box .col-md-2 {
+	padding-left:40px ;
+	
+}
+
+.panel-like {
+	margin-left: 5px;
+	margin-top:5px;
+}
+
+.col-md-2 > h5 {
+	color: #999999;
+	font-size: 16px;
+	
+}
+
+
+.panel-link > a h6 {
+	color: #4E4D4D;
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	
+}
+
+.panel-link > h4 {
+	color: #AAAAAA;
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	
+}
+
+.panel-link {
+	margin-top:20px;
+	
+}
+
