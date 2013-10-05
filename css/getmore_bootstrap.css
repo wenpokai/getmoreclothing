@@ -97,7 +97,7 @@ body {
 /* for #header */
 #header {
 	margin-bottom: 10px;
-	margin-top: 40px;
+	margin-top: 45px;
 	background-color: #FFFFFF;
 }
 
@@ -286,3 +286,30 @@ body {
 	
 }
 
+.banner-s {
+	margin-bottom:15px;
+	
+}
+
+.rightcol {
+	padding-top: 35px;
+	margin-bottom: 35px; 
+
+}
+
+.leftcol {
+	padding-top: 80px;
+	padding-left: 20px;
+
+}
+
+.rightcol >img {
+	margin-bottom: 35px; 
+}
+
+.contactus > p {
+	color: #AAAAAA;
+	font-size: 11px;
+	margin-top: 0px;
+
+}
