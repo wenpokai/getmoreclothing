@@ -5631,6 +5631,14 @@ body.modal-open,
   margin-left: auto;
 }
 
+.modal-dialog-800 {
+  z-index: 1050;
+  width: auto;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .modal-content {
   position: relative;
   background-color: #ffffff;
@@ -5683,6 +5691,10 @@ body.modal-open,
   padding: 20px;
 }
 
+.modal-center {
+  margin-left: 40px;
+}
+
 .modal-footer {
   padding: 19px 30px 20px;
   margin-top: 15px;
@@ -5731,6 +5743,14 @@ body.modal-open,
     padding-top: 30px;
     padding-bottom: 30px;
   }
+    .modal-dialog-800 {
+    right: auto;
+    left: 50%;
+    width: 800px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
