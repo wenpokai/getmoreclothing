@@ -328,6 +328,14 @@ nav {
 	margin-bottom: 35px; 
 }
 
+.rightcol >h4 {
+	color: #52AF7E; 
+}
+
+.rightcol >h2 {
+	font-weight: bold; 
+}
+
 .contactus > p {
 	color: #AAAAAA;
 	font-size: 11px;
