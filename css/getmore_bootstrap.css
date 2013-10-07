@@ -106,7 +106,7 @@ nav {
 	margin-left: Auto;
 }
 
-.tags > li {
+.tags > li{
 	background: url('../img/IconStar.png') no-repeat center left;
 	padding-left: 15px;
 	margin-left: 25px;
@@ -117,6 +117,8 @@ nav {
 	color:#4cb2a2;
 	background: url('../img/IconStarSelected.png') no-repeat center left;
 }
+
+navlink
 
 #header_right_section {
 	padding-left: 83px;

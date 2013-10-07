@@ -1,4 +1,144 @@
-/* override getmore_bootstrap */
+
+
+.carousel-indicators {
+	position: relative;
+	top: 25px;
+}
+
+.carousel-indicators > .active {
+	background-color: #4cb2a2;
+}
+
+.carousel-indicators > li {
+	background-color: #bbbebd;
+}
+
+#getmore_suggestions {
+	margin: 50px 0px;
+}
+
+#getmore_suggestions > h5 {
+	color: #e72d2c;
+	font-size: 22px;
+}
+
+.production {
+	width: 212px;
+	height: 360px;
+	margin: 0 7px 10px 7px;
+	padding: 0;
+	border: solid 1px #b7b7b5;
+	background: #ffffff;
+}
+
+.production > p {
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.production > img {
+	margin-top: -20px;
+}
+
+.collection {
+	position: relative;
+	left: 175px;
+	top: 25px;
+}
+
+#log_in {
+	position: relative;
+	right: 3px;
+	bottom: 3px;
+}
+
+.form-group > .col-md-5 {
+	padding-left: 0px;
+	padding-right: 25px;
+	text-align: right;
+}
+#getmore_login, .fb_login {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.modal-title {
+	text-align: center;
+}
+
+.fb_login > h4 {
+	text-align: center;
+	margin-bottom:30px;
+}
+
+.fb_login_btn {
+	margin: 0 40px ;
+	background-color: #BDE1D6;
+}
+
+#getmore_login > .row > div {
+	padding-left: 0;
+}
+
+#getmore_login > .row {
+	padding-bottom: 10px;
+}
+
+.getmore_instruction {
+	padding-top: 13px;
+}
+
+.announcement {
+	color: #717170;
+	font-size: 12px;
+}
+
+#start_to_getmore {
+	padding 0;
+}
+
+.form-group > input {
+	width: 375px;
+}
+
+#registration {
+	padding: 10px 0;
+	color: #717170;
+	font-size: 12px;
+}
+
+#forget_password {
+	color: #e72d2c;
+	padding-right: 25px;
+}
+
+
+#registration > a {
+	color: #3e9b95;
+}
+
+
+
+.carousel{
+	margin-bottom:60px;
+	
+}
+
+.homead {
+  margin-left: -18px;
+  margin-bottom: 20px;
+  border: 0px solid transparent;
+  border-radius: 0px;
+}
+
+.homead-box {
+	width: 980px;
+	height: auto;
+	margin: auto;
+	padding-bottom: 40px; 
+}
+
+/* apply.css */
 
 .blank_rectangel {
 	width: auto;
@@ -14,7 +154,8 @@ div {
 }
 
 .dashed_hr {
-	margin: 0px
+	margin-top:30px;
+	margin-bottom: 30px;
 }
 
 #buttons {
