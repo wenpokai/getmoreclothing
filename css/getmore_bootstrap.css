@@ -118,7 +118,30 @@ nav {
 	background: url('../img/IconStarSelected.png') no-repeat center left;
 }
 
-navlink
+.noimgtags > li{
+	padding-left: 30px;
+	margin-left: 25px;
+	font-size: 14px;
+	color:#4cb2a2;
+}
+
+.nodimgtags > li:active, .noimgtags > li:hover {
+	color:#666666;
+}
+
+.redtags > li{
+	background: url('../img/IconStar-red.png') no-repeat center left;
+	padding-left: 15px;
+	margin-left: 25px;
+	font-size: 14px;
+	color:red;
+}
+
+.redtags > li:active, .redtags > li:hover {
+	color:#4cb2a2;
+	background: url('../img/IconStarSelected.png') no-repeat center left;
+	color:#4cb2a2;
+}
 
 #header_right_section {
 	padding-left: 83px;
