@@ -278,3 +278,7 @@ div {
 #getmore_suggestions {
 	margin: 50px 0px;
 }
+
+.404img >img{
+  	text-align: center;
+}
