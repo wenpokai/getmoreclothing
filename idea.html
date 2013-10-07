@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Getmore</title>
+
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/getmore_bootstrap.css"/>
+		<link rel="stylesheet" href="css/apply.css"/>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-2.0.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<div class='container'>
+			<div class='header'>
+				<nav class="navbar-fixed-top navbar-inverse" role="navigation">
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a data-toggle="modal" href="http://getmore.cc"><img src="img/home.png" alt="" id='log_in'/></a></li>
+						<li><a data-toggle="modal" href="http://bit.ly/1g9Jt4t" target="_blank ">GetMore Blog</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a data-toggle="modal" href="#signUpModal"><img src="img/login.png" alt="" id='log_in'/> Log In</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+				</nav>
+				<div class="modal fade" id='signUpModal'>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">註冊會員</h4>
+							</div>
+							<div class="modal-body">
+								<div class="fb_login">
+									<h4>GetMore 是亞洲第一個二手衣時尚購物網站</h4>
+									<a class='fb_login_btn btn btn-primary' href="#">用facebook登入</a> 快使用facebook快速登入!
+									<hr class="dashed_hr"/>
+								</div>
+								<div id="getmore_login">
+									<div class="row">
+										<div class="col-md-4">
+											<h4>註冊會員</h4> 
+										</div>
+										<div class="col-md-8 pull-right announcement getmore_instruction">
+											還不是GetMore的會員嗎？ 免費加入！
+										</div>
+									</div>
+									<form role="form">
+										<div class="form-group">
+											<label for="sign_up_email">信箱</label><div class='col-md-5 pull-right description'>此為您的會員登入帳號</div>
+											<input type="email" class="form-control" id="sign_up_email" placeholder="email">
+										</div>
+										<div class="form-group">
+											<label for="nickname">暱稱</label> <div class='col-md-5 pull-right description'>14字元以內</div>
+											<input type="text" class="form-control" id="nickname" placeholder="暱稱">
+										</div>
+										<div class="form-group">
+											<label for="password">密碼</label>
+											<input type="password" class="form-control" id="password" placeholder="Password">
+										</div>
+										<a id='start_to_getmore' href="#" class='btn btn-info'>開始GetMore</a>
+										<div id='registration' class="col-md-4 pull-right">
+											已是會員？ <a id='logIn' href="#">由此登入！</a>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<p class='announcement'>已成為「會員」或是點擊「用facebook 登入」按鈕的同時,表示您已詳讀並同意GetMore的<a href="#">使用者條款</a>。</p>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+				<div class="modal fade" id='logInModal'>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">會員入口</h4>
+							</div>
+							<div class="modal-body">
+								<div class="fb_login">
+									<h4>GetMore 是亞洲第一個二手衣時尚購物網站</h4>
+									<a class='fb_login_btn btn btn-primary' href="#">用facebook登入</a> 快使用facebook快速登入!
+									<hr class="dashed_hr"/>
+								</div>
+								<div id="getmore_login">
+									<div class="row">
+										<div class="col-md-4">
+											<h4>會員登入</h4> 
+										</div>
+										<div class="getmore_instruction col-md-8 pull-right announcement">
+											若已是GetMore的會員,請在此登入!
+										</div>
+									</div>
+									<form role="form">
+										<div class="form-group">
+											<label for="email">信箱</label>
+											<input type="email" class="form-control" id="email" placeholder="email">
+										</div>
+										<div class="form-group">
+											<label for="password">密碼</label> <a id='forget_password' class="pull-right" href="#">忘記密碼？</a>
+											<input type="password" class="form-control" id="password" placeholder="Password">
+										</div>
+										<a id='start_to_getmore' href="#" class='btn btn-info'>開始GetMore</a>
+										<div id='registration' class="col-md-4 pull-right">
+											還不是會員? <a id='register' href='#'>來註冊!</a>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<p class='announcement'>已成為「會員」或是點擊「用facebook 登入」按鈕的同時,表示您已詳讀並同意GetMore的<a href="#">使用者條款</a>。</p>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				<div class="modal fade" id='videomodel'>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">GetMore 理念</h4>
+							</div>
+							<div class="modal-body">
+								<iframe src="//player.vimeo.com/video/74211715" width="580" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="modal-footer">
+								<p class='announcement'>GetMore二次時尚，重新定義衣服的價值。</p>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				<div id='header' class='row'>
+					<div id='logo' class='col-md-12'>
+						<a href='home.html'><img src='img/getmore.png' /></a>
+					</div>
+					<div class='col-md-7'>
+						<ul class='nav navbar-nav tags'>
+							<li>NEW</li>
+							<li>WOMEN</li>
+							<li>MEN</li>
+							<li>KIDS/BABY</li>
+						</ul>
+					</div>
+					<div id='header_right_section' class='col-md-5'>
+						<ul class='nav navbar-nav tags'>
+							<li>新手上路</li>
+							<li>賣衣服</li>
+							<li>About</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- header -->
+			<img class='banner-s' src="img/banner-s/about/idea.jpg">
+			<div class='main'>
+				<div class='row'>
+					<div class='col-md-3'>
+						<div class='leftcol'>
+						<p>
+  							<a href='intro.html'><button type="button" class="btn btn-primary btn-lg">GetMore簡介</button></a>
+						</p>
+						<p>
+  							<a href='energy.html'><button type="button" class="btn btn-primary btn-lg">GetMore Energy</button></a>
+						</p>
+						<p>
+  							<a href='idea.html'><button type="button" class="btn btn-primary btn-lg">GetMore理念</button></a>
+						</p>
+						<p>
+  							<a href='partner.html'><button type="button" class="btn btn-primary btn-lg">合作夥伴</button></a>
+						</p>
+						</div>
+						<hr>
+						<div class='contactus'><p> Contact us <br> service@getmore.cc </p> </div>
+					</div>
+					<div class='col-md-9'>
+						<div class='rightcol'>
+							<h2>GetMore 理念</h2></br>
+							<img class='banner-s' src="img/content/about/idea.jpg">
+							<p>   GetMore從生活經驗出發，不管是自身，或是與人交談之中，我們發現了一個問題：衣櫃裡有些衣服，買了卻很少穿或根本沒穿過，不穿浪費，但丟了又可惜，總是令人感到尷尬。因此，我們想幫助大家「解決衣櫃裡尷尬的衣服」，並且讓這件事能延伸出更大的意義，如同我們品牌的名稱「GetMore」，我們希望能創造更多價值。</p></br>
+							<h4><font color='#BDE1D6'>善用衣櫃增加收入</font></h4></br>
+							<p>根據統計，大部分的人，80%的時間只穿衣櫃裡20%的衣服。我們希望藉這個全新的網路服務，讓大家開始整理衣櫃，並且將衣櫃裡不常穿或根本沒穿過的八成新、九成新的衣服挑出來，交給GetMore，並由我們幫你輕洗、整新後賣出，進而增加您的收入。</p></br>
+							 
+							<h4><font color='#BDE1D6'>Get more space, get more clothes</font></h4></br>
+							<p>開始動手整理衣櫃，讓衣櫃騰出更多空間後，把從GetMore賺來的錢，拿去買更多喜歡的衣服！</p></br>
+	 
+							<h4><font color='#BDE1D6'>讓好衣服有再次被愛的機會</font></h4></br>
+							<p>衣櫃裡有許多衣服，是不常穿、或根本沒穿過，這些可能是衝動購物之下買的、或是買回家發現不合適的，又或者是買回過一段時間後，改變風格不喜歡了。雖然這些衣服不再適合自己，但也許對於其他人來說，卻是很好、很合適的衣服。因此，我們希望藉由GetMore的計畫，創造一個契機，讓好的衣服有再次被愛的機會。</p></br>
+							 
+							<h4><font color='#BDE1D6'>賦予二手衣新的面貌</font></h4></br>
+							<p>一般人對於二手衣的既定印象，都會有老舊、帶點骯髒的感覺。但在GetMore，衣服都是八成新、九成新，而且每一件都經過GetMore精心挑選的工廠嚴格清洗過，更有專人整燙、整新。因此GetMore的每件商品都是乾淨、安心、像新的一樣，這也是我們對於品質的堅持。</p></br>
+							 
+							<h4><font color='#BDE1D6'>重新思考衣服的價值</font></h4></br>
+							<p>藉由這個買賣流程，我們也希望，能讓使用者開始去思索衣服的價值，也重新拾回二手衣的價值。</p></br>
+							 
+							<h4><font color='#BDE1D6'>愛地球，先從檢視自己身邊的資源做起</font></h4></br>
+							<p>環境保護是社會現在很關注的議題，但改善環境是必須由大家一起身體力行去完成的。GetMore希望能先從生活周遭的小細節做起，期許大家能檢視身邊資源，做到最有效的重複利用。</p></br>
+							 
+							<h4><font color='#BDE1D6'>Let the earth get more beautiful</font></h4></br>
+							<p>我們希望透過這項創新的服務，能達到有效減少碳排放量的目標並改善環境品質，讓我們的地球能更加美好。</p></br>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="panel-box">
+					<div class="col-md-2">
+						<h5>關於GetMore</h5>
+						<div class="panel-link">
+							<a href="intro.html">
+							<h6>GetMore簡介</h6>
+							</a>
+							<a href="energy.html">
+							<h6>GetMore Energy</h6>
+							</a>
+							<a href="idea.html">
+							<h6>GetMore理念</h6>
+							</a>
+							<a href="partner.html">
+							<h6>合作夥伴</h6>
+							</a>
+						</div>
+					</div>
+					<div class='col-md-2'>
+						<h5>開始GetMore</h5>
+						<div class="panel-link">
+							<a href="sellintro.html">
+							<h6>我要賣衣服</h6>
+							</a>
+							<a href="buyintro.html">
+							<h6>我要買衣服</h6>
+							</a>
+							<a href="washintro.html">
+							<h6>保證嚴格清洗</h6>
+							</a>
+							<a href="userpolicy.html">
+							<h6>使用條款</h6>
+							</a>
+						</div>
+					</div>
+					<div class='col-md-2'>
+						<h5>購買說明</h5>
+						<div class="panel-link">
+							<a href="paynfeepolicy.html">
+							<h6>付款與運費</h6>
+							</a>
+							<a href="deliverintro.html">
+							<h6>配送方式</h6>
+							</a>
+							<a href="returnpolicy.html">
+							<h6>關於退貨</h6>
+							</a>
+						</div>
+					</div>
+					<div class='col-md-2'>
+						<h5>公益服務</h5>
+						<div class="panel-link">
+							<a href="getmorelove.html">
+							<h6>GetMore Love</h6>
+							</a>
+						</div>
+					</div>
+					<div class='col-md-2'>
+						<h5>客服中心</h5>
+						<div class="panel-link">
+							<a href="qalist.html">
+							<h6> Q&A </h6>
+							</a>
+							<h4> Contact us <br> service@getmore.cc </h4>
+							<a href="http://on.fb.me/1hplb4m" target="_blank"><img src="img/likeicon/fb.png" alt="" class='panel-like'/></a>
+							<a href="http://www.youtube.com/channel/UCLQtRAJ28v2e-ymeKJR-yXw/videos/" target="_blank"><img src="img/likeicon/youtube.png" alt="" class='panel-like'/></a>
+							<a href="http://bit.ly/1g9Jt4t" target="_blank" ><img src="img/likeicon/blog.png" alt="" class='panel-like'/> </a>
+						</div>
+					</div>
+					</div>						
+				</div>
+				<div class="panel-footer">
+					<hr> 
+					<p>Copyright © 2013 GetMore.cc INC.</p> <p>All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
