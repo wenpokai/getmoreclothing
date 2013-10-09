@@ -21,7 +21,7 @@
 					<div class='col-md-9'>
 						<div class='rightcol'>
 						<h2>保證嚴格清洗</h2></br>
-						<p>專業洗衣流程</p></br>
+						<h4>專業洗衣流程</h4></br>
 						<img src="/assets/images/content/wash/washprocess1.jpg">
 						<img src="/assets/images/content/wash/washprocess2.jpg">
 						<img src="/assets/images/content/wash/washprocess3.jpg">
