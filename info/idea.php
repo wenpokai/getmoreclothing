@@ -1,5 +1,5 @@
-				<img class='banner-s' src="/assets/img/banner-s/about/idea.jpg">
-				<div class='row' id='pagerow'>
+				<img class='banner-s' src="/assets/images/banner-s/about/idea.jpg">
+				<div class='row'>
 					<div class='col-md-3'>
 						<div class='leftcol'>
 						<p>
